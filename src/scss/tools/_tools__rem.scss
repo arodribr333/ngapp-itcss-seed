@@ -1,7 +1,8 @@
 /*------------------------------------
     #REM FUNCTION
 ------------------------------------*/
-$base-font: 16;
-@function rem($pixels, $context: $base-font) {
+@import '../settings/settings__config';
+
+@function rem($pixels, $context: $base-size) {
     @return #{$pixels/$context}rem;
 }

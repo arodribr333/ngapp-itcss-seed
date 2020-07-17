@@ -1,7 +1,7 @@
-/* RESPONSIVE ----------------------------
-A simple mixin to quickly generate whole media queries from the aliases and conditions defined in `settings/breakpoints.scss`.
------------------------------------------- */
-@import '../settings/breakpoints.scss';
+/*------------------------------------
+    #RESPONSIVE
+    A simple mixin to quickly generate whole media queries from the aliases and conditions defined in `settings/breakpoints.scss`
+------------------------------------*/
 
 @mixin media-query($mq) {
 

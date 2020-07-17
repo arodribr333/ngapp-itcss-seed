@@ -9,23 +9,18 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* ^^ The previous styles are included by angular material, if we have another configurations must be included on BASE body section down below */
-
 /* ITCSS */
 // UTILITIES
-@import 'scss/utilities/_utilities__bootstrap'; /* Only styles that we need from the library */
+@import 'scss/utilities/utilities__bootstrap'; /* Only styles that we need from the library */
 
 // SETTINGS
-@import 'scss/settings/_settings__root'; /* root vars: colors, dimensions... */
-@import 'scss/settings/_settings__breakpoints'; /* responsive media queries in rem unit */
-@import 'scss/settings/_settings__reset'; /* nav styles reset */
+@import 'scss/settings/settings__root'; /* root vars: colors, dimensions... */
+@import 'scss/settings/settings__reset'; /* nav styles reset */
+// @import 'scss/settings/settings__config'; /* Included on functions invocation project config vars */
+// @import 'scss/settings/settings__breakpoints'; /* Included on functions invocation project media-query rem breakpoints */
 
 // TOOLS
-@import 'scss/tools/_tools__functions'; /* File to include all functions in project. This file must be imported on components too */
+@import 'scss/tools/tools__tools'; /* File to include all functions in project. This file must be imported on components too */
 
 // BASE
 @import 'scss/base/base__fonts'; /* Font project configurations */
@@ -33,7 +28,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import 'scss/base/base__body'; /* body tag generic project configuration */
 
 // MEDIA PRINT
-@import 'scss/print/print__print';
+@import 'scss/print/print__print'; /* Print styles */
 
 // COMPONENTS
-// ...
+@import 'scss/components/d4i-component';
+
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* ^^ The previous styles are included by angular material, if we have another configurations must be included on BASE body section down below */

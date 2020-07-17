@@ -1,0 +1,14 @@
+@import "../../../scss/tools/tools__tools";
+
+.#{$namespace}example {
+    background-color: var(--redball);
+    color: var(--yellowball);
+    padding: rem(10) rem(15);
+}
+
+@include media-query("xs") {
+    .#{$namespace}example {
+        background-color: var(--greenball);
+        color: var(--redball);
+    }
+}

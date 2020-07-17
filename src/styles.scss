@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -34,8 +35,3 @@
 @import 'scss/components/d4i-component';
 
 
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* ^^ The previous styles are included by angular material, if we have another configurations must be included on BASE body section down below */

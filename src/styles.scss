@@ -1,1 +1,39 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* ^^ The previous styles are included by angular material, if we have another configurations must be included on BASE body section down below */
+
+/* ITCSS */
+// UTILITIES
+@import 'scss/utilities/_utilities__bootstrap'; /* Only styles that we need from the library */
+
+// SETTINGS
+@import 'scss/settings/_settings__root'; /* root vars: colors, dimensions... */
+@import 'scss/settings/_settings__breakpoints'; /* responsive media queries in rem unit */
+@import 'scss/settings/_settings__reset'; /* nav styles reset */
+
+// TOOLS
+@import 'scss/tools/_tools__functions'; /* File to include all functions in project. This file must be imported on components too */
+
+// BASE
+@import 'scss/base/base__fonts'; /* Font project configurations */
+@import 'scss/base/base__html'; /* html tag generic project configuration */
+@import 'scss/base/base__body'; /* body tag generic project configuration */
+
+// MEDIA PRINT
+@import 'scss/print/print__print';
+
+// COMPONENTS
+// ...

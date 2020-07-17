@@ -1,0 +1,39 @@
+@media print {
+    @import '_print__reset';
+
+    body[data-print] * {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    body[data-print],
+    body[data-print]>[data-print] * {
+        position: relative;
+        visibility: visible;
+    }
+
+    #printSection,
+    #printSection * {
+        visibility: visible;
+        position: relative;
+    }
+
+    #printSection {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    body[data-print]> :not([data-print]) {
+        visibility: hidden;
+    }
+
+    body[data-print]>[data-print] {
+        visibility: visible;
+        position: relative;
+    }
+
+    body[data-print] {
+
+    }
+}

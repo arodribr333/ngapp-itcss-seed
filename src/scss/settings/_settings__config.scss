@@ -15,10 +15,10 @@ $font-primary                   : Roboto, "Helvetica Neue", sans-serif;
 $font-secondary                 : Arial, Helvetica, sans-serif;
 
 // Font sizes
+$size-primary                   : $base-size;                        /* 16 */
 $size-xsmall                    : $size-primary * 0.5;               /* 8 */
 $size-small                     : $size-primary * 0.75;              /* 12 */
 
-$size-primary                   : $base-size;                        /* 16 */
 $size-secondary                 : $size-primary * 1.25;              /* 20 */
 $size-tertiary                  : $size-primary * 1.5;               /* 24 */
 
@@ -32,8 +32,8 @@ $size-biggest                   : $size-primary * 5;                 /* 80 */
 $size-xbiggest                  : $size-primary * 5.5;               /* 88 */
 
 // Spaces
-$space-small                    : $space-normal / 0.625;             /* 5 */
 $space-normal                   : $size-primary * 0.625;             /* 10 */
+$space-small                    : $space-normal / 0.625;             /* 5 */
 $space-medium                   : $space-normal * 1.5;               /* 15 */
 $space-large                    : $space-normal * 2;                 /* 20 */
 $space-big                      : $space-normal * 3;                 /* 30 */

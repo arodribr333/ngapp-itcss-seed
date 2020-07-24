@@ -15,25 +15,25 @@ $font-primary                   : Roboto, "Helvetica Neue", sans-serif;
 $font-secondary                 : Arial, Helvetica, sans-serif;
 
 // Font sizes
-$size-xsmall                    : $base-size * 0.5;               /* 8 */
-$size-small                     : $base-size * 0.75;              /* 12 */
+$size-xsmall                    : $size-primary * 0.5;               /* 8 */
+$size-small                     : $size-primary * 0.75;              /* 12 */
 
-$size-primary                   : $base-size;                     /* 16 */
-$size-secondary                 : $base-size * 1.25;              /* 20 */
-$size-tertiary                  : $base-size * 1.5;               /* 24 */
+$size-primary                   : $base-size;                        /* 16 */
+$size-secondary                 : $size-primary * 1.25;              /* 20 */
+$size-tertiary                  : $size-primary * 1.5;               /* 24 */
 
-$size-normal                    : $base-size * 2;                 /* 32 */
-$size-xnormal                   : $base-size * 2.5;               /* 40 */
-$size-medium                    : $base-size * 3;                 /* 48 */
-$size-xmedium                   : $base-size * 3.5;               /* 56 */
-$size-big                       : $base-size * 4;                 /* 64 */
-$size-xbig                      : $base-size * 4.5;               /* 72 */
-$size-biggest                   : $base-size * 5;                 /* 80 */
-$size-xbiggest                  : $base-size * 5.5;               /* 88 */
+$size-normal                    : $size-primary * 2;                 /* 32 */
+$size-xnormal                   : $size-primary * 2.5;               /* 40 */
+$size-medium                    : $size-primary * 3;                 /* 48 */
+$size-xmedium                   : $size-primary * 3.5;               /* 56 */
+$size-big                       : $size-primary * 4;                 /* 64 */
+$size-xbig                      : $size-primary * 4.5;               /* 72 */
+$size-biggest                   : $size-primary * 5;                 /* 80 */
+$size-xbiggest                  : $size-primary * 5.5;               /* 88 */
 
 // Spaces
-$space-small                    : $space-normal / 0.625;          /* 5 */
-$space-normal                   : $base-size * 0.625;             /* 10 */
-$space-medium                   : $space-normal * 1.5;            /* 15 */
-$space-large                    : $space-normal * 2;              /* 20 */
-$space-big                      : $space-normal * 3;              /* 30 */
+$space-small                    : $space-normal / 0.625;             /* 5 */
+$space-normal                   : $size-primary * 0.625;             /* 10 */
+$space-medium                   : $space-normal * 1.5;               /* 15 */
+$space-large                    : $space-normal * 2;                 /* 20 */
+$space-big                      : $space-normal * 3;                 /* 30 */
